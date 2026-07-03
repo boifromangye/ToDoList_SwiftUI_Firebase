@@ -7,6 +7,7 @@
 
 import SwiftUI
 // Swift UI 는 View model 를 구현해서 사용. View에 로직이 없고 상태를 통해서 UI 만 그리도록 수정
+// Viewmodel은 Observable 를 채택해서 구현
 struct ContentView: View {
     // Firestore에서 불러온 할 일 목록
     @State private var tasks: [TaskItem] = []
